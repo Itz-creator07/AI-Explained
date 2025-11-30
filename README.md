@@ -27,7 +27,9 @@ This website aims to:
 
 ## 🚀 View Live
 
-Open `index.html` in any web browser to view the website.
+**[Visit the Live Website](https://itz-creator07.github.io/AI-Explained/)**
+
+Or open `index.html` in any web browser to view locally.
 
 ## 📚 Sections
 

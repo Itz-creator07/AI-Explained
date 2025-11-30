@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Explained - Understanding Artificial Intelligence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">🤖 AI Explained</div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#safety">AI Safety</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+            <button id="dark-mode-toggle" class="dark-mode-btn">
+                <span class="light-icon">🌙</span>
+                <span class="dark-icon">☀️</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="header-left">
+            <h1 id="main-title">AI Explained</h1>
+            <h3 id="subtitle">Empowering You to Understand and Use AI Safely</h3>
+            <p id="header-desc">Your trusted resource for learning about Artificial Intelligence - because AI is a tool to enhance human potential, not replace it.</p>
+            <div class="header-buttons">
+                <button class="header-button btn-primary" onclick="scrollToSection('about')">Learn About AI</button>
+                <button class="header-button btn-secondary" onclick="scrollToSection('resources')">Explore Resources</button>
+            </div>
+        </div>
+        <div class="header-right">
+            <img id="header-img" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop" alt="AI and Human Collaboration - Representing AI as a helpful tool">
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="content-section">
+        <h2 class="section-title">What is AI?</h2>
+
+        <div class="content-grid">
+            <div class="content-text">
+                <p><strong>Artificial Intelligence (AI)</strong> is a technology that enables computers to perform tasks that typically require human intelligence, such as learning, problem-solving, and decision-making.</p>
+
+                <p>AI is not magic—it's mathematics, statistics, and computer science working together. Think of AI as an extremely capable assistant that can help you with repetitive, time-consuming tasks so you can focus on creative and meaningful work.</p>
+
+                <h3>Why Should You Learn About AI?</h3>
+                <ul>
+                    <li><strong>Empowerment:</strong> Understanding AI helps you use it confidently and effectively</li>
+                    <li><strong>Career Growth:</strong> AI skills are increasingly valuable across all industries</li>
+                    <li><strong>Critical Thinking:</strong> Know when to trust AI and when to question it</li>
+                    <li><strong>Innovation:</strong> Use AI to solve real-world problems in your field</li>
+                </ul>
+
+                <p class="highlight-box">💡 <strong>Important:</strong> AI is a tool designed to augment human capabilities, not replace them. It handles repetitive and data-intensive tasks, freeing humans to focus on creativity, empathy, and complex decision-making.</p>
+            </div>
+
+            <div class="content-image">
+                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=800&fit=crop" alt="Brain and circuit board representing AI technology">
+                <p class="image-caption">AI combines human-like reasoning with computational power</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How AI Works Section -->
+    <section id="how-it-works" class="content-section alt-bg">
+        <h2 class="section-title">How Does AI Work?</h2>
+
+        <div class="content-grid reverse">
+            <div class="content-image">
+                <img src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=600&h=800&fit=crop" alt="Neural network visualization showing AI learning process">
+                <p class="image-caption">Machine learning models learn patterns from data</p>
+            </div>
+
+            <div class="content-text">
+                <p>AI systems learn from data through a process called <strong>machine learning</strong>. Instead of being explicitly programmed for every scenario, AI models identify patterns and make predictions based on examples.</p>
+
+                <h3>The AI Learning Process:</h3>
+                <ol>
+                    <li><strong>Data Collection:</strong> Gather relevant information and examples</li>
+                    <li><strong>Training:</strong> The AI model learns patterns from the data</li>
+                    <li><strong>Testing:</strong> Evaluate the model's accuracy and performance</li>
+                    <li><strong>Deployment:</strong> Use the trained model to make predictions</li>
+                    <li><strong>Refinement:</strong> Continuously improve based on new data</li>
+                </ol>
+
+                <h3>Types of AI You Might Encounter:</h3>
+                <ul>
+                    <li><strong>Natural Language Processing (NLP):</strong> ChatGPT, translation tools, voice assistants</li>
+                    <li><strong>Computer Vision:</strong> Facial recognition, medical imaging, self-driving cars</li>
+                    <li><strong>Recommendation Systems:</strong> Netflix suggestions, online shopping recommendations</li>
+                    <li><strong>Predictive Analytics:</strong> Weather forecasting, financial predictions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Safety Section -->
+    <section id="safety" class="content-section">
+        <h2 class="section-title">Using AI Safely and Responsibly</h2>
+
+        <div class="safety-grid">
+            <div class="safety-card">
+                <h3>🔒 Protect Your Privacy</h3>
+                <p>Never share sensitive personal information (passwords, financial data, medical records) with AI systems. Always review privacy policies before using AI tools.</p>
+            </div>
+
+            <div class="safety-card">
+                <h3>🧠 Think Critically</h3>
+                <p>AI can make mistakes or produce "hallucinations" (false information presented as fact). Always verify important information from multiple reliable sources.</p>
+            </div>
+
+            <div class="safety-card">
+                <h3>⚖️ Understand Bias</h3>
+                <p>AI models learn from historical data, which may contain human biases. Be aware that AI outputs can reflect societal biases and may not always be fair or accurate.</p>
+            </div>
+
+            <div class="safety-card">
+                <h3>✅ Verify Sources</h3>
+                <p>When using AI for research or decision-making, cross-reference information with authoritative sources. AI is a starting point, not the final answer.</p>
+            </div>
+
+            <div class="safety-card">
+                <h3>🎯 Use AI as a Tool</h3>
+                <p>AI excels at repetitive tasks, data analysis, and generating ideas. Use it to enhance your work, but maintain human oversight for critical decisions.</p>
+            </div>
+
+            <div class="safety-card">
+                <h3>📚 Keep Learning</h3>
+                <p>AI technology evolves rapidly. Stay informed about new capabilities, limitations, and best practices through continuous learning.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="content-section alt-bg">
+        <h2 class="section-title">Watch: Understanding AI in 5 Minutes</h2>
+        <div class="video-container">
+            <iframe
+                src="https://www.youtube.com/embed/2ePf9rue1Ao"
+                title="What is AI? YouTube video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="content-section">
+        <h2 class="section-title">Trusted AI Resources & Learning Materials</h2>
+
+        <p class="section-intro">Explore these curated resources from leading academic institutions and technology companies to deepen your understanding of AI.</p>
+
+        <div class="resources-grid">
+            <article class="resource-card">
+                <h3><a href="https://www.deeplearning.ai/" target="_blank">DeepLearning.AI</a></h3>
+                <p><strong>Provider:</strong> Andrew Ng, Stanford University</p>
+                <p>Free courses on machine learning, deep learning, and AI fundamentals from one of AI's leading educators. Perfect for beginners and intermediate learners.</p>
+            </article>
+
+            <article class="resource-card">
+                <h3><a href="https://ai.google/education/" target="_blank">Google AI Education</a></h3>
+                <p><strong>Provider:</strong> Google</p>
+                <p>Interactive tutorials, crash courses, and learning resources covering machine learning basics, responsible AI, and practical applications.</p>
+            </article>
+
+            <article class="resource-card">
+                <h3><a href="https://www.elementsofai.com/" target="_blank">Elements of AI</a></h3>
+                <p><strong>Provider:</strong> University of Helsinki & MinnaLearn</p>
+                <p>A free online introduction to AI for non-experts. Available in multiple languages, covering AI concepts, ethics, and societal implications.</p>
+            </article>
+
+            <article class="resource-card">
+                <h3><a href="https://www.microsoft.com/en-us/ai/ai-school" target="_blank">Microsoft AI School</a></h3>
+                <p><strong>Provider:</strong> Microsoft</p>
+                <p>Hands-on learning paths for developers and business professionals, covering Azure AI services, machine learning, and AI solutions.</p>
+            </article>
+
+            <article class="resource-card">
+                <h3><a href="https://www.coursera.org/learn/machine-learning" target="_blank">Machine Learning Specialization</a></h3>
+                <p><strong>Provider:</strong> Stanford University (Coursera)</p>
+                <p>Comprehensive introduction to machine learning, data mining, and statistical pattern recognition. Industry-recognized certification available.</p>
+            </article>
+
+            <article class="resource-card">
+                <h3><a href="https://ethics.fast.ai/" target="_blank">Practical Data Ethics</a></h3>
+                <p><strong>Provider:</strong> fast.ai</p>
+                <p>Free course exploring the real-world consequences of data and AI, including bias, privacy, and accountability in algorithmic systems.</p>
+            </article>
+
+            <article class="resource-card">
+                <h3><a href="https://openai.com/research" target="_blank">OpenAI Research</a></h3>
+                <p><strong>Provider:</strong> OpenAI</p>
+                <p>Cutting-edge research papers and updates on AI development, including ChatGPT and GPT models. Great for staying current with AI advancements.</p>
+            </article>
+
+            <article class="resource-card">
+                <h3><a href="https://www.ibm.com/watson/ai-education" target="_blank">IBM AI Education</a></h3>
+                <p><strong>Provider:</strong> IBM Watson</p>
+                <p>Free AI courses and resources covering Watson AI services, machine learning, and enterprise AI applications.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>AI Explained</h4>
+                <p>Empowering everyone to understand and use AI safely.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About AI</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#safety">AI Safety</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>External Resources</h4>
+                <ul>
+                    <li><a href="https://ai.google/" target="_blank">Google AI</a></li>
+                    <li><a href="https://openai.com/" target="_blank">OpenAI</a></li>
+                    <li><a href="https://www.microsoft.com/en-us/ai" target="_blank">Microsoft AI</a></li>
+                    <li><a href="https://www.ibm.com/watson/ai" target="_blank">IBM Watson</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AI Explained. Educational Resource.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

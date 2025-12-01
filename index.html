@@ -178,58 +178,255 @@
             </div>
         </div>
 
-        <!-- AI Tool Comparison Table -->
-        <div class="ai-tools-comparison">
-            <h3 class="comparison-title">🔧 Quick AI Tool Comparison</h3>
-            <div class="comparison-table-wrapper">
-                <table class="ai-comparison-table">
-                    <thead>
-                        <tr>
-                            <th>AI Tool</th>
-                            <th>Best For</th>
-                            <th>Strengths</th>
-                            <th>Privacy Level</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Claude</strong></td>
-                            <td>Analysis, Coding, Long Docs</td>
-                            <td>Deep reasoning, ethical guidelines, large context window</td>
-                            <td><span class="privacy-high">High</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>ChatGPT</strong></td>
-                            <td>Writing, General Tasks</td>
-                            <td>Versatile, conversational, plugins available</td>
-                            <td><span class="privacy-medium">Medium</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Perplexity</strong></td>
-                            <td>Research, Current Events</td>
-                            <td>Real-time search, citations, fact-checking</td>
-                            <td><span class="privacy-medium">Medium</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Gemini</strong></td>
-                            <td>Google Integration</td>
-                            <td>Multimodal, Google services integration</td>
-                            <td><span class="privacy-medium">Medium</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>DALL-E / Midjourney</strong></td>
-                            <td>Image Generation</td>
-                            <td>High-quality visuals, creative designs</td>
-                            <td><span class="privacy-low">Varies</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Local Models</strong></td>
-                            <td>Maximum Privacy</td>
-                            <td>Complete data control, offline access</td>
-                            <td><span class="privacy-high">Very High</span></td>
-                        </tr>
-                    </tbody>
-                </table>
+        <!-- AI Tools by Category -->
+        <div class="ai-tools-by-category">
+            <h3 class="category-main-title">🔧 AI Tools by Category</h3>
+            <p class="category-main-intro">Explore the top AI tools organized by use case. Each category shows the top 3 most popular tools with additional options available.</p>
+
+            <!-- Category 1: Text AI / Chat -->
+            <div class="tool-category">
+                <div class="category-header">
+                    <span class="category-icon">💬</span>
+                    <h4 class="category-title">Text AI / Chat</h4>
+                </div>
+                <p class="category-description">Conversational AI for writing, brainstorming, analysis, and general tasks</p>
+
+                <div class="category-table-wrapper">
+                    <table class="category-table">
+                        <thead>
+                            <tr>
+                                <th>AI Tool</th>
+                                <th>Best For</th>
+                                <th>Strengths</th>
+                                <th>Privacy</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Claude</strong></td>
+                                <td>Analysis, Long Docs, Coding</td>
+                                <td>Deep reasoning, ethical AI, 200K context</td>
+                                <td><span class="privacy-high">High</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>ChatGPT</strong></td>
+                                <td>Writing, General Tasks</td>
+                                <td>Versatile, conversational, plugins</td>
+                                <td><span class="privacy-medium">Medium</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gemini</strong></td>
+                                <td>Google Integration</td>
+                                <td>Multimodal, Google services</td>
+                                <td><span class="privacy-medium">Medium</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="more-tools">
+                    <strong>More Text AI:</strong>
+                    <a href="https://www.perplexity.ai" target="_blank" rel="noopener">Perplexity</a> •
+                    <a href="https://grok.x.ai" target="_blank" rel="noopener">Grok</a> •
+                    <a href="https://pi.ai" target="_blank" rel="noopener">Pi</a> •
+                    <a href="https://cohere.com" target="_blank" rel="noopener">Cohere</a> •
+                    <a href="https://character.ai" target="_blank" rel="noopener">Character.AI</a>
+                </div>
+            </div>
+
+            <!-- Category 2: Code AI -->
+            <div class="tool-category">
+                <div class="category-header">
+                    <span class="category-icon">💻</span>
+                    <h4 class="category-title">Code AI</h4>
+                </div>
+                <p class="category-description">AI-powered coding assistants for development, debugging, and code generation</p>
+
+                <div class="category-table-wrapper">
+                    <table class="category-table">
+                        <thead>
+                            <tr>
+                                <th>AI Tool</th>
+                                <th>Best For</th>
+                                <th>Strengths</th>
+                                <th>Privacy</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>GitHub Copilot</strong></td>
+                                <td>IDE Integration</td>
+                                <td>Context-aware, multi-language support</td>
+                                <td><span class="privacy-medium">Medium</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cursor</strong></td>
+                                <td>AI-First Editor</td>
+                                <td>Built-in AI, chat-to-code</td>
+                                <td><span class="privacy-medium">Medium</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Codeium</strong></td>
+                                <td>Free Alternative</td>
+                                <td>Free, fast autocomplete</td>
+                                <td><span class="privacy-medium">Medium</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="more-tools">
+                    <strong>More Code AI:</strong>
+                    <a href="https://replit.com" target="_blank" rel="noopener">Replit AI</a> •
+                    <a href="https://www.tabnine.com" target="_blank" rel="noopener">Tabnine</a> •
+                    <a href="https://aws.amazon.com/codewhisperer" target="_blank" rel="noopener">CodeWhisperer</a> •
+                    <a href="https://sourcegraph.com/cody" target="_blank" rel="noopener">Cody</a>
+                </div>
+            </div>
+
+            <!-- Category 3: Image AI -->
+            <div class="tool-category">
+                <div class="category-header">
+                    <span class="category-icon">🎨</span>
+                    <h4 class="category-title">Image AI</h4>
+                </div>
+                <p class="category-description">AI image generation tools for art, design, and visual content creation</p>
+
+                <div class="category-table-wrapper">
+                    <table class="category-table">
+                        <thead>
+                            <tr>
+                                <th>AI Tool</th>
+                                <th>Best For</th>
+                                <th>Strengths</th>
+                                <th>Privacy</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>DALL-E 3</strong></td>
+                                <td>High-Quality Images</td>
+                                <td>Photorealistic, prompt understanding</td>
+                                <td><span class="privacy-medium">Medium</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Midjourney</strong></td>
+                                <td>Artistic Visuals</td>
+                                <td>Artistic style, community</td>
+                                <td><span class="privacy-low">Low</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Stable Diffusion</strong></td>
+                                <td>Open Source</td>
+                                <td>Free, customizable, runs locally</td>
+                                <td><span class="privacy-high">Very High</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="more-tools">
+                    <strong>More Image AI:</strong>
+                    <a href="https://leonardo.ai" target="_blank" rel="noopener">Leonardo.ai</a> •
+                    <a href="https://firefly.adobe.com" target="_blank" rel="noopener">Adobe Firefly</a> •
+                    <a href="https://ideogram.ai" target="_blank" rel="noopener">Ideogram</a> •
+                    <a href="https://blackforestlabs.ai" target="_blank" rel="noopener">Flux</a>
+                </div>
+            </div>
+
+            <!-- Category 4: Search AI -->
+            <div class="tool-category">
+                <div class="category-header">
+                    <span class="category-icon">🔍</span>
+                    <h4 class="category-title">Search AI</h4>
+                </div>
+                <p class="category-description">AI-powered search engines with real-time information and citations</p>
+
+                <div class="category-table-wrapper">
+                    <table class="category-table">
+                        <thead>
+                            <tr>
+                                <th>AI Tool</th>
+                                <th>Best For</th>
+                                <th>Strengths</th>
+                                <th>Privacy</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Perplexity</strong></td>
+                                <td>Research, Citations</td>
+                                <td>Real-time search, sources</td>
+                                <td><span class="privacy-medium">Medium</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>You.com</strong></td>
+                                <td>Privacy-Focused</td>
+                                <td>No tracking, customizable</td>
+                                <td><span class="privacy-high">High</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bing Chat</strong></td>
+                                <td>Microsoft Integration</td>
+                                <td>Free, GPT-4 powered</td>
+                                <td><span class="privacy-medium">Medium</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="more-tools">
+                    <strong>More Search AI:</strong>
+                    <a href="https://search.brave.com" target="_blank" rel="noopener">Brave Search</a> •
+                    <a href="https://kagi.com" target="_blank" rel="noopener">Kagi</a> •
+                    <a href="https://www.phind.com" target="_blank" rel="noopener">Phind</a>
+                </div>
+            </div>
+
+            <!-- Category 5: Open Source / Local AI -->
+            <div class="tool-category">
+                <div class="category-header">
+                    <span class="category-icon">🏠</span>
+                    <h4 class="category-title">Open Source / Local AI</h4>
+                </div>
+                <p class="category-description">Run AI models locally on your computer for maximum privacy and control</p>
+
+                <div class="category-table-wrapper">
+                    <table class="category-table">
+                        <thead>
+                            <tr>
+                                <th>AI Tool</th>
+                                <th>Best For</th>
+                                <th>Strengths</th>
+                                <th>Privacy</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Llama 3</strong></td>
+                                <td>Open Source LLM</td>
+                                <td>Free, Meta-backed, powerful</td>
+                                <td><span class="privacy-high">Very High</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ollama</strong></td>
+                                <td>Easy Local Setup</td>
+                                <td>One-command install, multiple models</td>
+                                <td><span class="privacy-high">Very High</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>LM Studio</strong></td>
+                                <td>User-Friendly UI</td>
+                                <td>GUI, easy model management</td>
+                                <td><span class="privacy-high">Very High</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="more-tools">
+                    <strong>More Open Source AI:</strong>
+                    <a href="https://gpt4all.io" target="_blank" rel="noopener">GPT4All</a> •
+                    <a href="https://jan.ai" target="_blank" rel="noopener">Jan</a> •
+                    <a href="https://mistral.ai" target="_blank" rel="noopener">Mistral</a> •
+                    <a href="https://www.deepseek.com" target="_blank" rel="noopener">DeepSeek</a> •
+                    <a href="https://github.com/Mozilla-Ocho/llamafile" target="_blank" rel="noopener">Llamafile</a>
+                </div>
             </div>
         </div>
 

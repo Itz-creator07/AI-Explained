@@ -703,6 +703,167 @@ p {
     }
 }
 
+/*** AI Privacy & Identity Protection Section ***/
+.privacy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.privacy-card {
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    transition: all 0.3s ease;
+}
+
+.privacy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
+}
+
+.privacy-icon {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.privacy-card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.4rem;
+}
+
+.privacy-content {
+    color: var(--text-color);
+}
+
+.privacy-hook {
+    font-size: 1.1rem;
+    color: var(--primary-dark);
+    margin-bottom: var(--spacing-md);
+}
+
+.privacy-tips {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-md) 0;
+}
+
+.privacy-tips li {
+    padding: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    border-left: 3px solid var(--primary-color);
+    padding-left: var(--spacing-md);
+    background: var(--bg-alt);
+    border-radius: var(--radius-sm);
+}
+
+.example-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin: var(--spacing-md) 0;
+}
+
+.example-title {
+    font-weight: bold;
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.1rem;
+}
+
+.example-bad {
+    background: rgba(239, 68, 68, 0.2);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    margin: var(--spacing-xs) 0;
+    border-left: 4px solid #ef4444;
+}
+
+.example-good {
+    background: rgba(16, 185, 129, 0.2);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    margin: var(--spacing-xs) 0;
+    border-left: 4px solid #10b981;
+}
+
+.privacy-takeaway {
+    background: var(--primary-light);
+    color: white;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-top: var(--spacing-md);
+    font-size: 1.05rem;
+}
+
+.privacy-importance {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-xl);
+    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--primary-color);
+}
+
+.privacy-importance h3 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.importance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.importance-item {
+    background: var(--card-bg);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.importance-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-color);
+}
+
+.importance-item strong {
+    display: block;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.1rem;
+}
+
+.importance-item p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Responsive Design for Privacy Section */
+@media (max-width: 768px) {
+    .privacy-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .importance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .privacy-card {
+        padding: var(--spacing-md);
+    }
+}
+
 /*** Animations ***/
 @keyframes fadeIn {
     from {

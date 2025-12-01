@@ -1021,8 +1021,8 @@ p {
     border-left: 4px solid #d97706;
 }
 
-/*** AI Tool Comparison Table ***/
-.ai-tools-comparison {
+/*** AI Tools by Category ***/
+.ai-tools-by-category {
     margin-top: var(--spacing-xl);
     padding: var(--spacing-xl);
     background: var(--card-bg);
@@ -1030,53 +1030,130 @@ p {
     border-radius: var(--radius-lg);
 }
 
-.comparison-title {
-    font-size: 1.8rem;
+.category-main-title {
+    font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
     color: var(--primary-color);
 }
 
-.comparison-table-wrapper {
-    overflow-x: auto;
-    border-radius: var(--radius-md);
+.category-main-intro {
+    text-align: center;
+    font-size: 1.05rem;
+    margin-bottom: var(--spacing-xl);
+    opacity: 0.9;
 }
 
-.ai-comparison-table {
+.tool-category {
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background: white;
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+body.dark-mode .tool-category {
+    background: var(--dark-bg);
+}
+
+.tool-category:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.category-icon {
+    font-size: 2rem;
+}
+
+.category-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.category-description {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-lg);
+    opacity: 0.85;
+}
+
+.category-table-wrapper {
+    overflow-x: auto;
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.category-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 0.95rem;
 }
 
-.ai-comparison-table thead {
+.category-table thead {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
 }
 
-.ai-comparison-table th {
+.category-table th {
     padding: var(--spacing-md);
     text-align: left;
     font-weight: 600;
-    border-bottom: 3px solid var(--primary-color);
 }
 
-.ai-comparison-table td {
+.category-table td {
     padding: var(--spacing-md);
     border-bottom: 1px solid var(--border-color);
     vertical-align: top;
 }
 
-.ai-comparison-table tbody tr {
+.category-table tbody tr {
     transition: background-color 0.2s ease;
 }
 
-.ai-comparison-table tbody tr:hover {
+.category-table tbody tr:hover {
     background-color: rgba(102, 126, 234, 0.05);
 }
 
-.ai-comparison-table tbody tr:last-child td {
+.category-table tbody tr:last-child td {
     border-bottom: none;
+}
+
+.more-tools {
+    padding: var(--spacing-md);
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    border-radius: var(--radius-md);
+    font-size: 0.95rem;
+}
+
+body.dark-mode .more-tools {
+    background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+}
+
+.more-tools strong {
+    color: var(--primary-color);
+    margin-right: var(--spacing-xs);
+}
+
+.more-tools a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.more-tools a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 .privacy-high {
@@ -1109,7 +1186,7 @@ p {
     font-size: 0.85rem;
 }
 
-/* Responsive Design for CIA Framework */
+/* Responsive Design for CIA Framework and AI Tools */
 @media (max-width: 768px) {
     .cia-grid {
         grid-template-columns: 1fr;
@@ -1123,13 +1200,40 @@ p {
         font-size: 1.5rem;
     }
 
-    .comparison-table-wrapper {
+    .ai-tools-by-category {
+        padding: var(--spacing-md);
+    }
+
+    .category-main-title {
+        font-size: 1.5rem;
+    }
+
+    .tool-category {
+        padding: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .category-icon {
+        font-size: 1.5rem;
+    }
+
+    .category-title {
+        font-size: 1.2rem;
+    }
+
+    .category-table-wrapper {
         font-size: 0.85rem;
     }
 
-    .ai-comparison-table th,
-    .ai-comparison-table td {
+    .category-table th,
+    .category-table td {
         padding: var(--spacing-sm);
+        font-size: 0.85rem;
+    }
+
+    .more-tools {
+        padding: var(--spacing-sm);
+        font-size: 0.85rem;
     }
 }
 

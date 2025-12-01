@@ -884,8 +884,16 @@ p {
 .cia-intro {
     text-align: center;
     font-size: 1.1rem;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
     opacity: 0.95;
+}
+
+.cia-attribution {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-lg);
+    opacity: 0.9;
+    font-style: italic;
 }
 
 .cia-grid {
@@ -1095,6 +1103,192 @@ p {
     .ai-comparison-table th,
     .ai-comparison-table td {
         padding: var(--spacing-sm);
+    }
+}
+
+/*** NIST AI Risk Management Framework Section ***/
+.nist-framework {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-xl);
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    border-radius: var(--radius-lg);
+    color: white;
+}
+
+.nist-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nist-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-sm);
+    opacity: 0.95;
+}
+
+.nist-attribution {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-lg);
+    opacity: 0.9;
+}
+
+.nist-attribution a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.nist-attribution a:hover {
+    color: #fbbf24;
+}
+
+.nist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.nist-card {
+    background: white;
+    color: var(--text-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+}
+
+.nist-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.nist-card.govern {
+    border-color: #8b5cf6;
+}
+
+.nist-card.govern:hover {
+    border-color: #8b5cf6;
+    box-shadow: 0 12px 40px rgba(139, 92, 246, 0.4);
+}
+
+.nist-card.map {
+    border-color: #06b6d4;
+}
+
+.nist-card.map:hover {
+    border-color: #06b6d4;
+    box-shadow: 0 12px 40px rgba(6, 182, 212, 0.4);
+}
+
+.nist-card.measure {
+    border-color: #10b981;
+}
+
+.nist-card.measure:hover {
+    border-color: #10b981;
+    box-shadow: 0 12px 40px rgba(16, 185, 129, 0.4);
+}
+
+.nist-card.manage {
+    border-color: #f59e0b;
+}
+
+.nist-card.manage:hover {
+    border-color: #f59e0b;
+    box-shadow: 0 12px 40px rgba(245, 158, 11, 0.4);
+}
+
+.nist-icon {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.nist-card h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: var(--spacing-xs);
+    color: var(--primary-color);
+}
+
+.nist-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+    font-style: italic;
+}
+
+.nist-content p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.nist-list {
+    list-style: none;
+    padding-left: 0;
+    margin: var(--spacing-md) 0;
+}
+
+.nist-list li {
+    padding: var(--spacing-xs) 0;
+    padding-left: var(--spacing-sm);
+    line-height: 1.6;
+}
+
+.nist-example {
+    background: linear-gradient(135deg, #e0e7ff 0%, #dbeafe 100%);
+    color: var(--dark-bg);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-top: var(--spacing-md);
+    font-size: 0.95rem;
+    border-left: 4px solid #3b82f6;
+}
+
+.nist-example strong {
+    color: #1e40af;
+}
+
+.nist-footer {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.nist-footer p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design for NIST Framework */
+@media (max-width: 768px) {
+    .nist-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nist-framework {
+        padding: var(--spacing-lg);
+    }
+
+    .nist-title {
+        font-size: 1.5rem;
+    }
+
+    .nist-card {
+        padding: var(--spacing-md);
     }
 }
 

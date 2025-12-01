@@ -864,6 +864,240 @@ p {
     }
 }
 
+/*** CIA Framework Section ***/
+.cia-framework {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-xl);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: var(--radius-lg);
+    color: white;
+}
+
+.cia-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cia-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-lg);
+    opacity: 0.95;
+}
+
+.cia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.cia-card {
+    background: white;
+    color: var(--text-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+}
+
+.cia-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.cia-card.confidentiality {
+    border-color: #667eea;
+}
+
+.cia-card.confidentiality:hover {
+    border-color: #667eea;
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
+}
+
+.cia-card.integrity {
+    border-color: #10b981;
+}
+
+.cia-card.integrity:hover {
+    border-color: #10b981;
+    box-shadow: 0 12px 40px rgba(16, 185, 129, 0.4);
+}
+
+.cia-card.availability {
+    border-color: #f59e0b;
+}
+
+.cia-card.availability:hover {
+    border-color: #f59e0b;
+    box-shadow: 0 12px 40px rgba(245, 158, 11, 0.4);
+}
+
+.cia-icon {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.cia-card h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: var(--spacing-xs);
+    color: var(--primary-color);
+}
+
+.cia-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+    font-style: italic;
+}
+
+.cia-content p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.cia-list {
+    list-style: none;
+    padding-left: 0;
+    margin: var(--spacing-md) 0;
+}
+
+.cia-list li {
+    padding: var(--spacing-xs) 0;
+    padding-left: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.cia-warning {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: var(--dark-bg);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-top: var(--spacing-md);
+    font-size: 0.95rem;
+    border-left: 4px solid #d97706;
+}
+
+/*** AI Tool Comparison Table ***/
+.ai-tools-comparison {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-xl);
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+}
+
+.comparison-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--primary-color);
+}
+
+.comparison-table-wrapper {
+    overflow-x: auto;
+    border-radius: var(--radius-md);
+}
+
+.ai-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.ai-comparison-table thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.ai-comparison-table th {
+    padding: var(--spacing-md);
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.ai-comparison-table td {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: top;
+}
+
+.ai-comparison-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.ai-comparison-table tbody tr:hover {
+    background-color: rgba(102, 126, 234, 0.05);
+}
+
+.ai-comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.privacy-high {
+    display: inline-block;
+    padding: 4px 12px;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.privacy-medium {
+    display: inline-block;
+    padding: 4px 12px;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: var(--dark-bg);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.privacy-low {
+    display: inline-block;
+    padding: 4px 12px;
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: white;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* Responsive Design for CIA Framework */
+@media (max-width: 768px) {
+    .cia-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cia-framework {
+        padding: var(--spacing-lg);
+    }
+
+    .cia-title {
+        font-size: 1.5rem;
+    }
+
+    .comparison-table-wrapper {
+        font-size: 0.85rem;
+    }
+
+    .ai-comparison-table th,
+    .ai-comparison-table td {
+        padding: var(--spacing-sm);
+    }
+}
+
 /*** Animations ***/
 @keyframes fadeIn {
     from {

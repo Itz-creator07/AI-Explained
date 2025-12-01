@@ -1021,6 +1021,24 @@ p {
     border-left: 4px solid #d97706;
 }
 
+/* Dark Mode Styles for CIA Framework */
+body.dark-mode .cia-card {
+    background: var(--card-bg);
+    color: var(--text-color);
+}
+
+body.dark-mode .cia-card h4 {
+    color: var(--primary-light);
+}
+
+body.dark-mode .cia-subtitle {
+    color: var(--secondary-color);
+}
+
+body.dark-mode .cia-warning {
+    color: white;
+}
+
 /*** AI Tools by Category ***/
 .ai-tools-by-category {
     margin-top: var(--spacing-xl);
@@ -1402,6 +1420,29 @@ body.dark-mode .more-tools {
     margin: 0;
     font-size: 1rem;
     line-height: 1.6;
+}
+
+/* Dark Mode Styles for NIST Framework */
+body.dark-mode .nist-card {
+    background: var(--card-bg);
+    color: var(--text-color);
+}
+
+body.dark-mode .nist-card h4 {
+    color: var(--primary-light);
+}
+
+body.dark-mode .nist-subtitle {
+    color: var(--secondary-color);
+}
+
+body.dark-mode .nist-example {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    color: var(--text-color);
+}
+
+body.dark-mode .nist-example strong {
+    color: #60a5fa;
 }
 
 /* Responsive Design for NIST Framework */

@@ -47,6 +47,12 @@ Or open `index.html` in any web browser to view locally.
 - Responsive Design
 - Dark Mode
 
+## 🙏 Credits
+
+- Developed with assistance from **Claude Code** (Anthropic)
+- Built with HTML, CSS, and JavaScript
+- Hosted on GitHub Pages
+
 ## 👨‍💻 Author
 
 Built as a WEB101 project to promote AI education and literacy.

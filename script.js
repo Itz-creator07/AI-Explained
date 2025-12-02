@@ -37,6 +37,14 @@ document.addEventListener('DOMContentLoaded', function() {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
+
+            // If href is just "#", scroll to top of page
+            if (targetId === '') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                return;
+            }
+
+            // Otherwise, scroll to the target section
             const targetSection = document.getElementById(targetId);
             if (targetSection) {
                 targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });

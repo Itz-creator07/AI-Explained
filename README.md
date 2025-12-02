@@ -2,6 +2,20 @@
 
 An educational website about Artificial Intelligence, built to help people understand AI and use it safely.
 
+## 📖 Table of Contents
+
+- [🎯 Purpose](#-purpose)
+- [✨ Features](#-features)
+- [📁 Files](#-files)
+- [🚀 View Live](#-view-live)
+- [📚 Sections](#-sections)
+- [🎨 Technologies Used](#-technologies-used)
+- [🙏 Credits](#-credits)
+- [👨‍💻 Author](#-author)
+- [📄 License](#-license)
+
+---
+
 ## 🎯 Purpose
 
 This website aims to:
